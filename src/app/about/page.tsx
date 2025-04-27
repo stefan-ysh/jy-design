@@ -14,7 +14,7 @@ export default function AboutPage() {
   useEffect(() => {
     anime({
       targets: '.skill-bar',
-      width: function(el: any) {
+      width: function(el: HTMLElement) {
         return el.getAttribute('data-level') + '%';
       },
       easing: 'easeInOutQuart',
