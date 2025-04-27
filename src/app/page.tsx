@@ -10,6 +10,7 @@ import { getFeaturedProjects } from "@/data/projects";
 import { useProfile } from "@/data/profile";
 import anime from "animejs/lib/anime.es.js";
 import { useLanguage } from "@/components/providers/language-provider";
+import { StarRating } from "@/components/ui/star-rating";
 
 export default function Home() {
   const featuredProjects = getFeaturedProjects();
@@ -120,16 +121,18 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid grid-cols-2 md:grid-cols-5 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
           >
-            {profile.skills.slice(0, 5).map((skill, index) => (
+            {profile.skills.slice(0, 5).map((skill) => (
               <div
                 key={skill.name}
-                className="bg-theme-skill rounded-lg p-4 text-center"
+                className="bg-theme-skill rounded-lg p-4"
               >
-                <div className="text-xl font-bold mb-1">{skill.level}/10</div>
-                <div className="text-sm text-secondary">
+                <div className="text-sm font-medium mb-2 text-center">
                   {skill.name}
+                </div>
+                <div className="flex justify-center">
+                  <StarRating rating={skill.level / 2} size="sm" showText={false} />
                 </div>
               </div>
             ))}

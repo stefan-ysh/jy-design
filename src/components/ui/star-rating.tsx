@@ -7,6 +7,7 @@ interface StarRatingProps {
   maxStars?: number; // Maximum number of stars to display (default: 5)
   size?: "sm" | "md" | "lg"; // Size of stars
   color?: string; // Color of filled stars
+  emptyColor?: string; // Color for empty stars
   className?: string; // Additional CSS classes
   showText?: boolean; // Whether to display the text label
 }
@@ -30,7 +31,8 @@ export function StarRating({
   rating,
   maxStars = 5,
   size = "md",
-  color = "text-yellow-400",
+  color = "text-yellow-400 dark:text-yellow-500",
+  emptyColor = "text-gray-300 dark:text-gray-600",
   className,
   showText = false,
 }: StarRatingProps) {
@@ -68,11 +70,12 @@ export function StarRating({
           // For half stars
           if (starValue - 0.5 <= clampedRating) {
             return (
-              <StarHalf
-                key={i}
-                size={starSize}
-                className={cn("fill-current", color)}
-              />
+              <div key={i} className="relative">
+                <Star size={starSize} className={cn(emptyColor)} />
+                <div className="absolute inset-0 overflow-hidden w-1/2">
+                  <Star size={starSize} className={cn("fill-current", color)} />
+                </div>
+              </div>
             );
           }
           
@@ -81,7 +84,7 @@ export function StarRating({
             <Star
               key={i}
               size={starSize}
-              className="text-gray-300"
+              className={emptyColor}
             />
           );
         })}

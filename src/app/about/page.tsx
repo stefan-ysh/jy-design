@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useProfile } from "@/data/profile";
 import anime from "animejs/lib/anime.es.js";
 import { useLanguage } from "@/components/providers/language-provider";
+import { SkillsList } from "@/components/ui/skill-level";
 
 export default function AboutPage() {
   const { dictionary } = useLanguage();
@@ -84,28 +85,12 @@ export default function AboutPage() {
           </motion.h2>
           
           <div className="max-w-3xl mx-auto">
-            {profile.skills.map((skill, index) => (
-              <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-                className="mb-6"
-              >
-                <div className="flex justify-between items-center mb-2">
-                  <span className="font-medium">{skill.name}</span>
-                  <span className="text-sm text-secondary">{skill.level}/10</span>
-                </div>
-                <div className="w-full h-2 bg-theme-skill-bar rounded-full overflow-hidden">
-                  <div 
-                    className="skill-bar h-full bg-theme-skill-bar-fill rounded-full" 
-                    data-level={skill.level * 10}
-                    style={{ width: "0%" }}
-                  ></div>
-                </div>
-              </motion.div>
-            ))}
+            <SkillsList 
+              skills={profile.skills.map(skill => ({
+                name: skill.name,
+                level: skill.level / 2 // 转换为5星制 (原值是10分制)
+              }))}
+            />
           </div>
         </div>
       </section>
