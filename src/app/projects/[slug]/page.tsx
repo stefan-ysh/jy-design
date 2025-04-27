@@ -21,17 +21,17 @@ interface ProjectDetailPageProps {
 export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
   const { slug } = React.use(params);
   const project = getProjectBySlug(slug);
-  
+
   if (!project) {
     notFound();
   }
-  
+
   const relatedProjects = getRelatedProjects(slug);
-  
+
   return (
     <>
       {/* Project Hero */}
-      <section className="pt-28 pb-16 bg-neutral-50 dark:bg-neutral-950">
+      <section className="pt-28 pb-16 ">
         <div className="container mx-auto px-4">
           <Button asChild variant="outline" className="mb-8">
             <Link href="/projects" className="flex items-center gap-2">
@@ -39,39 +39,39 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
               返回所有项目
             </Link>
           </Button>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="max-w-4xl mx-auto"
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">{project.title}</h1>
-            
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              {project.title}
+            </h1>
+
             <div className="flex flex-wrap gap-4 mb-8">
-              <div className="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
+              <div className="flex items-center gap-2 text-sm">
                 <Building size={16} />
                 <span>{project.client}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
+              <div className="flex items-center gap-2 text-sm">
                 <Clock size={16} />
                 <span>{project.date}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-400">
+              <div className="flex items-center gap-2 text-sm">
                 <Tag size={16} />
                 <span>{project.category}</span>
               </div>
             </div>
-            
-            <p className="text-lg text-neutral-700 dark:text-neutral-300 mb-10">
-              {project.description}
-            </p>
+
+            <p className="text-lg  mb-10">{project.description}</p>
           </motion.div>
         </div>
       </section>
-      
+
       {/* Project Main Image */}
-      <section className="py-12 bg-white ">
+      <section className="py-12 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
@@ -79,7 +79,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative aspect-video max-w-5xl mx-auto overflow-hidden rounded-xl shadow-xl"
           >
-            <Image 
+            <Image
               src={project.imageUrl}
               alt={project.title}
               fill
@@ -90,9 +90,9 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           </motion.div>
         </div>
       </section>
-      
+
       {/* Project Details */}
-      <section className="py-16 bg-white ">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <motion.div
@@ -105,7 +105,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 <p key={index}>{paragraph}</p>
               ))}
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -114,10 +114,10 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             >
               <h3 className="text-xl font-bold mb-4">使用技术和标签</h3>
               <div className="flex flex-wrap gap-2">
-                {project.tags.map(tag => (
-                  <span 
-                    key={tag} 
-                    className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full text-sm"
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 rounded-full text-sm"
                   >
                     {tag}
                   </span>
@@ -127,9 +127,9 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           </div>
         </div>
       </section>
-      
+
       {/* Project Gallery */}
-      <section className="py-16 bg-neutral-50 dark:bg-neutral-950">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -139,7 +139,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           >
             项目图片集
           </motion.h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {project.galleryImages.map((image, index) => (
               <motion.div
@@ -149,7 +149,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md"
               >
-                <Image 
+                <Image
                   src={image}
                   alt={`${project.title} - 图片 ${index + 1}`}
                   fill
@@ -161,10 +161,10 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           </div>
         </div>
       </section>
-      
+
       {/* Related Projects */}
       {relatedProjects.length > 0 && (
-        <section className="py-16 bg-white ">
+        <section className="py-16 ">
           <div className="container mx-auto px-4">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -175,7 +175,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             >
               相关项目
             </motion.h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {relatedProjects.map((project, index) => (
                 <ProjectCard
@@ -194,4 +194,4 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
       )}
     </>
   );
-} 
+}

@@ -44,7 +44,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-theme-profile-card shadow-lg rounded-xl p-8 mb-12"
             >
-              <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+              <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="w-48 h-48 relative rounded-full overflow-hidden flex-shrink-0">
                   <Image
                     src={profile.photo}

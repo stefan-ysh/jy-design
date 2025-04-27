@@ -61,7 +61,7 @@ export default function RootLayout({
         >
           <LanguageProvider>
             <Navbar />
-            <main className="min-h-screen pt-20">
+            <main className="min-h-screen pt-15">
               {children}
             </main>
             <Footer />

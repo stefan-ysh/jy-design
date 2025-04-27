@@ -46,10 +46,10 @@ const LanguageSwitch = () => {
   return (
     <button
       onClick={toggleLanguage}
-      className="p-2 rounded-md hover:bg-theme-hover transition-colors"
+      className="p-2 rounded-md hover:bg-theme-hover transition-colors cursor-pointer"
       aria-label="Toggle language"
     >
-      <span className="ml-2 text-xs">{language === 'en' ? "中文" : "EN"}</span>
+      <span className="text-sm">{language === 'en' ? "中文" : "EN"}</span>
     </button>
   );
 };
