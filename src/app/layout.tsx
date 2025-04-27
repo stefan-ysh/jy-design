@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="zh" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <script defer src="https://umami.tiantian.group/script.js" data-website-id="73db5b7f-5353-403f-80fe-8b3a44cbc3c7"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
