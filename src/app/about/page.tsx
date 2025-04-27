@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useProfile } from "@/data/profile";
-// @ts-ignore - anime.js doesn't have proper TypeScript typings despite installing @types/animejs
 import anime from "animejs/lib/anime.es.js";
 import { useLanguage } from "@/components/providers/language-provider";
 

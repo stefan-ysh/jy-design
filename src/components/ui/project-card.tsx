@@ -1,11 +1,9 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-// @ts-ignore - anime.js doesn't have proper TypeScript typings despite installing @types/animejs
 import anime from "animejs/lib/anime.es.js";
 
 interface ProjectCardProps {

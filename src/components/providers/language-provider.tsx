@@ -1,11 +1,11 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { getDictionary, Language } from '@/lib/dictionary';
+import { getDictionary, Language, Dictionary } from '@/lib/dictionary';
 
 type LanguageContextType = {
   language: Language;
-  dictionary: any;
+  dictionary: Dictionary;
   setLanguage: (lang: Language) => void;
 };
 
@@ -80,11 +80,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   // Always initialize with appropriate language
   const [language, setLanguageState] = useState<Language>(getInitialLanguage());
   const [dictionary, setDictionary] = useState(getDictionary(getInitialLanguage()));
-  const [mounted, setMounted] = useState(false);
   
   // Initialize from cookie on mount (client-side only)
   useEffect(() => {
-    setMounted(true);
     const savedLanguage = getCookie('language');
     if (savedLanguage && (savedLanguage === 'zh' || savedLanguage === 'en')) {
       setLanguageState(savedLanguage as Language);

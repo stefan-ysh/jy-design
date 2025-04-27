@@ -1,13 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { ThemeProvider as NextThemesProvider, ThemeProviderProps as NextThemeProviderProps } from "next-themes";
 
-// Use a simple type that doesn't conflict with next-themes internal types
+// Use a more specific type for the theme provider
 type ThemeProviderProps = {
   children: React.ReactNode;
-  [key: string]: any;
-};
+} & Omit<NextThemeProviderProps, 'children'>;
 
 export function ThemeProvider({ 
   children,

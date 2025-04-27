@@ -175,18 +175,19 @@ export function getAllProjects(): Project[] {
     return defaultProjects; // 服务器端渲染时使用默认数据
   }
   
-  try {
-    const projects = useProjects();
-    // 确保返回值是数组类型
-    if (Array.isArray(projects)) {
-      return projects;
-    } else {
-      console.warn('Projects data is not an array, using default projects instead');
-      return defaultProjects;
-    }
-  } catch (error) {
-    console.warn('Error getting projects:', error);
-    // 如果在组件外调用，fallback到默认数据
+  // 不在这里调用 React Hook
+  return defaultProjects;
+}
+
+// 创建一个 React 组件来使用这些数据
+export function useAllProjects(): Project[] {
+  const projects = useProjects();
+  
+  // 确保返回值是数组类型
+  if (Array.isArray(projects)) {
+    return projects;
+  } else {
+    console.warn('Projects data is not an array, using default projects instead');
     return defaultProjects;
   }
 }

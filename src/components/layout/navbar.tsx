@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-  const { language, dictionary } = useLanguage();
+  const { dictionary } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {

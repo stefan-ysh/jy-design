@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import ProjectCard from "@/components/ui/project-card";
 import { getFeaturedProjects } from "@/data/projects";
 import { useProfile } from "@/data/profile";
-// @ts-ignore - anime.js doesn't have proper TypeScript typings despite installing @types/animejs
 import anime from "animejs/lib/anime.es.js";
 import { useLanguage } from "@/components/providers/language-provider";
 
