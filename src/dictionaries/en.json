@@ -1,0 +1,202 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "role": "Graphic Designer & Brand Advertising Designer",
+    "browse_portfolio": "Browse Portfolio",
+    "contact": "Contact Me",
+    "about_title": "About Me",
+    "learn_more": "Learn More",
+    "featured_projects": "Featured Projects",
+    "featured_description": "These are some of my recent projects showcasing my design philosophy and technical capabilities.",
+    "view_all": "View All Projects",
+    "cta_title": "Ready to start your project?",
+    "cta_description": "Whether you're looking to create a new brand identity, optimize existing designs, or solve specific design challenges, I'd be happy to collaborate with you."
+  },
+  "about": {
+    "title": "About Me",
+    "skills_title": "Professional Skills",
+    "experience_title": "Work Experience",
+    "education_title": "Professional Development",
+    "education_intro": [
+      "My design journey began with a passion for design and continuous self-exploration. Through persistent practice, I've developed the ability to approach design problems from multiple perspectives, combining theoretical knowledge with real project experience to create works that are both professionally profound and aesthetically pleasing.",
+      "Self-directed learning and participation in professional workshops are essential ways I draw design inspiration, allowing me to stay current with industry trends, constantly absorbing innovative concepts and technologies, and incorporating them into my creative practice."
+    ]
+  },
+  "projects": {
+    "title": "Portfolio",
+    "description": "Here's a showcase of my work covering branding, advertising design, and visual communication.",
+    "view_project": "View Project"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "For any collaboration inquiries or design project needs, please feel free to contact me. I look forward to creating amazing design work with you.",
+    "contact_info": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "location_value": "Shanghai, China",
+    "send_message": "Send Message",
+    "your_name": "Your Name",
+    "your_email": "Your Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "success_message": "Your message has been sent successfully! I will get back to you as soon as possible."
+  },
+  "footer": {
+    "site_description": "Focusing on graphic design and brand visuals, expressing brand values and concepts through elegant design language.",
+    "site_nav": "Site Navigation",
+    "contact_info": "Contact Info",
+    "social_media": "Social Media",
+    "copyright": "All rights reserved"
+  },
+  "profile": {
+    "name": "Liu Jingyan",
+    "role": "Graphic Designer & Brand Advertising Designer",
+    "bio": [
+      "I'm a designer focused on graphic design and brand advertising with 10 years of professional experience.",
+      "I excel at transforming brand concepts into eye-catching visual advertisements, helping clients gain more attention in competitive markets.",
+      "I believe excellent design should be both aesthetically pleasing and practical, capturing attention while communicating information. This philosophy runs through each of my projects, whether it's brand design, packaging design, or advertising design.",
+      "I love collaborating with clients from different industries, understanding their business needs and target audiences, to create visual advertisements that align with their brand tone and resonate with audiences.",
+      "When I'm not designing, you can find me exploring art exhibitions, capturing urban landscapes through photography, or reading design books in cafes for inspiration."
+    ],
+    "contactEmail": "contact@jydesign.com",
+    "skills": [
+      { "name": "Brand Design", "level": 9 },
+      { "name": "Typography", "level": 8 },
+      { "name": "Packaging Design", "level": 9 },
+      { "name": "Logo Design", "level": 8 },
+      { "name": "Illustration", "level": 6 },
+      { "name": "Adobe Photoshop", "level": 9 },
+      { "name": "Adobe Illustrator", "level": 9 },
+      { "name": "Adobe InDesign", "level": 8 },
+      { "name": "Figma", "level": 7 }
+    ],
+    "experiences": [
+      {
+        "company": "Bright Vision Design Studio",
+        "position": "Senior Graphic Designer",
+        "period": "2022 - Present",
+        "description": "Responsible for high-end client brand advertising design projects, including brand identities, print ads, and marketing materials. Lead a small design team, ensuring project quality and timely delivery."
+      },
+      {
+        "company": "Creative Advertising Media",
+        "position": "Graphic Designer",
+        "period": "2019 - 2022",
+        "description": "Participated in visual design work for advertising campaigns, including print ads, social media graphics, and promotional print materials. Communicated directly with clients to understand needs and provide creative advertising solutions."
+      },
+      {
+        "company": "New Edge Digital Marketing",
+        "position": "Junior Designer",
+        "period": "2018 - 2019",
+        "description": "Assisted the design team in completing various digital advertising design tasks, including social media ads, web ad design, and visual design for email marketing."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Self-Guided Exploration",
+        "degree": "Design Fundamentals & Creative Thinking",
+        "period": "2014 - 2016"
+      },
+      {
+        "institution": "Practical Projects",
+        "degree": "Brand & Advertising Design Implementation",
+        "period": "2016 - 2018"
+      },
+      {
+        "institution": "Global Design Workshop",
+        "degree": "Brand Identity Design Intensive Program",
+        "period": "2019"
+      },
+      {
+        "institution": "Continuous Professional Development",
+        "degree": "Adobe Creative Suite Mastery & Modern Design Theory",
+        "period": "2016 - Present"
+      }
+    ]
+  },
+  "projectData": {
+    "projects": [
+      {
+        "id": "1",
+        "title": "Tea Brand Visual Identity Design",
+        "slug": "tea-brand-design",
+        "client": "Pin Cha Tea",
+        "category": "Brand Design",
+        "description": "Designed a new visual identity for a traditional tea brand, combining modern design language with traditional tea culture elements to create a unique brand identification system.",
+        "fullDescription": [
+          "Pin Cha is a brand focused on traditional Chinese tea culture, dedicated to promoting quality tea to modern young consumers while preserving the essence of traditional tea culture.",
+          "The design challenge was how to balance tradition and modernity, creating a brand image that both respects tea culture traditions and has contemporary visual appeal.",
+          "I adopted a minimalist design style, combining the artistic conception and brushstrokes of traditional Chinese ink painting to create a modern brand visual system with Eastern aesthetic characteristics.",
+          "The complete brand design includes brand identities, packaging design, store visual systems, marketing materials, and digital media visual design. Through the coordination of these design elements, the brand has established a clear and consistent brand image."
+        ],
+        "imageUrl": "/images/project1-main.jpg",
+        "galleryImages": [
+          "/images/project1-1.jpg",
+          "/images/project1-2.jpg",
+          "/images/project1-3.jpg",
+          "/images/project1-4.jpg"
+        ],
+        "tags": ["Brand Design", "Packaging Design", "Logo Design", "Visual Identity System"],
+        "date": "2023-05",
+        "featured": true
+      },
+      {
+        "id": "2",
+        "title": "Morning Light Bookstore Rebranding",
+        "slug": "morning-light-bookstore-rebrand",
+        "client": "Morning Light Bookstore",
+        "category": "Brand Redesign",
+        "description": "Updated the brand for a local bookstore with 30 years of history, retaining core brand values while giving it modern vitality.",
+        "fullDescription": [
+          "Morning Light Bookstore is a community bookstore with 30 years of history, facing challenges from digitalization and the loss of young readers.",
+          "The goal of the rebranding was to preserve the bookstore's historical heritage and community emotional connection while injecting modern vitality to attract a new generation of readers.",
+          "During the design process, I researched the bookstore's history, values, and target audience, establishing the core brand concept of 'Light of Knowledge, Home of Community'.",
+          "The new visual system adopted warm tones and a concise graphic language, creating a visual experience that is both familiar and refreshingly new. The redesigned spatial layout and guidance system enhanced the customer experience and increased the store's social attributes.",
+          "Project outcomes include a new brand identity, store design, promotional materials, and social media visual style, helping the bookstore successfully attract more young readers while maintaining the loyalty of old customers."
+        ],
+        "imageUrl": "/images/project2-main.jpg",
+        "galleryImages": [
+          "/images/project2-1.jpg",
+          "/images/project2-2.jpg",
+          "/images/project2-3.jpg",
+          "/images/project2-4.jpg"
+        ],
+        "tags": ["Brand Redesign", "Logo Design", "Space Design", "Visual System"],
+        "date": "2023-08",
+        "featured": true
+      },
+      {
+        "id": "3",
+        "title": "Nature Sound Music Festival Visual Design",
+        "slug": "nature-sound-music-festival",
+        "client": "Nature Sound Music Festival Committee",
+        "category": "Event Visual Design",
+        "description": "Designed a complete visual identity system and promotional materials for an eco-themed music festival, integrating music and natural elements.",
+        "fullDescription": [
+          "Nature Sound is an annual music festival with environmental protection and sustainable development as its theme, aiming to convey environmental concepts through music.",
+          "The design needed to reflect the festival's ecological concept, while being artistic and attractive, effectively appealing to the target audience.",
+          "I created a visual language based on natural elements (water, wind, earth, fire), expressing the rhythm of music and the harmony of nature through flowing lines and organic forms.",
+          "Color choices included the green, blue, and earthy yellow of nature, with vibrant orange as accents, creating a visual effect that is ecological yet not lacking in vitality.",
+          "The complete design kit includes posters, brochures, programs, website design, stage backgrounds, guidance systems, and peripheral product designs, providing a consistent and recognizable visual experience for the music festival."
+        ],
+        "imageUrl": "/images/project3-main.jpg",
+        "galleryImages": [
+          "/images/project3-1.jpg",
+          "/images/project3-2.jpg",
+          "/images/project3-3.jpg",
+          "/images/project3-4.jpg"
+        ],
+        "tags": ["Event Design", "Poster Design", "Brand Design", "Eco Theme"],
+        "date": "2023-10",
+        "featured": false
+      }
+    ]
+  }
+} 

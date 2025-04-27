@@ -1,0 +1,202 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "关于我",
+    "projects": "作品集",
+    "contact": "联系我"
+  },
+  "home": {
+    "greeting": "你好，我是",
+    "role": "平面设计师 & 品牌广告设计师",
+    "browse_portfolio": "浏览作品集",
+    "contact": "联系我",
+    "about_title": "关于我",
+    "learn_more": "了解更多",
+    "featured_projects": "精选作品",
+    "featured_description": "这些是我近期完成的一些项目，展示了我的设计理念和技术能力。",
+    "view_all": "查看全部作品",
+    "cta_title": "准备开始您的项目了吗？",
+    "cta_description": "无论您是想打造全新品牌形象，优化现有设计还是寻求解决特定设计问题，我都很乐意与您合作。"
+  },
+  "about": {
+    "title": "关于我",
+    "skills_title": "专业技能",
+    "experience_title": "工作经历",
+    "education_title": "专业发展历程",
+    "education_intro": [
+      "我的设计之路始于对设计的热爱与不断的自我探索。通过持续实践，我培养了从不同视角思考设计问题的能力，将理论知识与实际项目经验相结合，创造出既有专业深度又不失美感的作品。",
+      "持续的自学和参与专业工作坊是我汲取设计灵感的重要方式，让我能够紧跟行业发展趋势，不断吸收创新理念与技术，并将它们融入到我的创作实践中。"
+    ]
+  },
+  "projects": {
+    "title": "作品集",
+    "description": "以下是我的部分作品展示，涵盖品牌设计、广告设计和视觉传达等多个领域。",
+    "view_project": "查看项目"
+  },
+  "contact": {
+    "title": "联系我",
+    "description": "有任何合作意向或设计项目需求，请随时与我联系。我很期待与您共同创造精彩的设计作品。",
+    "contact_info": "联系方式",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "location": "位置",
+    "location_value": "上海, 中国",
+    "send_message": "发送消息",
+    "your_name": "您的姓名",
+    "your_email": "您的邮箱",
+    "subject": "主题",
+    "message": "留言内容",
+    "send": "发送",
+    "success_message": "您的消息已成功发送！我将尽快回复您。"
+  },
+  "footer": {
+    "site_description": "专注于平面设计与品牌视觉，用优雅的设计语言表达品牌价值与理念。",
+    "site_nav": "站点导航",
+    "contact_info": "联系方式",
+    "social_media": "社交媒体",
+    "copyright": "版权所有"
+  },
+  "profile": {
+    "name": "刘静妍",
+    "role": "平面设计师 & 品牌广告设计师",
+    "bio": [
+      "我是一名专注于平面设计与品牌广告的设计师，拥有10余年专业设计经验。",
+      "我擅长将品牌理念转化为引人注目的视觉广告，帮助客户在竞争激烈的市场中获得更多关注。",
+      "我相信优秀的设计应当既美观又实用，既能吸引眼球又能传达信息。这种理念贯穿我的每一个项目，无论是品牌设计、包装设计还是广告设计。",
+      "我热爱与不同行业的客户合作，深入了解他们的业务需求和目标受众，为他们创造既符合品牌调性又能引起共鸣的视觉广告。",
+      "当我不在设计时，你可以发现我在探索艺术展览，摄影捕捉城市风景，或是在咖啡馆里阅读设计类书籍，汲取灵感。"
+    ],
+    "contactEmail": "contact@jydesign.com",
+    "skills": [
+      { "name": "品牌设计", "level": 9 },
+      { "name": "排版设计", "level": 8 },
+      { "name": "包装设计", "level": 9 },
+      { "name": "Logo设计", "level": 8 },
+      { "name": "插画设计", "level": 6 },
+      { "name": "Adobe Photoshop", "level": 9 },
+      { "name": "Adobe Illustrator", "level": 9 },
+      { "name": "Adobe InDesign", "level": 8 },
+      { "name": "Figma", "level": 7 }
+    ],
+    "experiences": [
+      {
+        "company": "明视觉设计工作室",
+        "position": "资深平面设计师",
+        "period": "2022年至今",
+        "description": "负责高端客户品牌广告设计项目，包括品牌标识、平面广告和市场营销材料。带领小型设计团队，确保项目质量和按时交付。"
+      },
+      {
+        "company": "创想广告传媒",
+        "position": "平面设计师",
+        "period": "2019年 - 2022年",
+        "description": "参与广告活动的视觉设计工作，包括平面广告、社交媒体图像和推广印刷材料。与客户直接沟通，理解需求并提供创意广告解决方案。"
+      },
+      {
+        "company": "新锐数字营销",
+        "position": "初级设计师",
+        "period": "2018年 - 2019年",
+        "description": "协助设计团队完成各类数字广告设计任务，包括社交媒体广告、网页广告设计和电子邮件营销视觉设计。"
+      }
+    ],
+    "education": [
+      {
+        "institution": "自学探索",
+        "degree": "设计基础与创意思维",
+        "period": "2014年 - 2016年"
+      },
+      {
+        "institution": "实践项目",
+        "degree": "品牌与广告设计实战",
+        "period": "2016年 - 2018年"
+      },
+      {
+        "institution": "全球设计工作坊",
+        "degree": "品牌标识设计精修班",
+        "period": "2019年"
+      },
+      {
+        "institution": "持续专业发展",
+        "degree": "Adobe创意套件精通与现代设计理论",
+        "period": "2016年至今"
+      }
+    ]
+  },
+  "projectData": {
+    "projects": [
+      {
+        "id": "1",
+        "title": "品茶与茶品牌视觉设计",
+        "slug": "tea-brand-design",
+        "client": "品茶茶叶",
+        "category": "品牌设计",
+        "description": "为传统茶叶品牌设计新的视觉形象，结合现代设计语言与传统茶文化元素，打造独特品牌识别系统。",
+        "fullDescription": [
+          "品茶是一家专注于传统中国茶文化的品牌，致力于在保留传统茶文化精髓的同时，向现代年轻消费者推广优质茶叶。",
+          "设计挑战在于如何平衡传统与现代，创造出既尊重茶文化传统又具有当代视觉吸引力的品牌形象。",
+          "我采用了极简的设计风格，结合传统中国水墨画的意境和笔触，创造出具有东方美学特色的现代品牌视觉系统。",
+          "完整的品牌设计包括品牌标识、包装设计、店面视觉系统、营销物料和数字媒体视觉设计。通过这些设计元素的协调统一，帮助品牌建立了清晰一致的品牌形象。"
+        ],
+        "imageUrl": "/images/project1-main.jpg",
+        "galleryImages": [
+          "/images/project1-1.jpg",
+          "/images/project1-2.jpg",
+          "/images/project1-3.jpg",
+          "/images/project1-4.jpg"
+        ],
+        "tags": ["品牌设计", "包装设计", "标志设计", "视觉识别系统"],
+        "date": "2023-05",
+        "featured": true
+      },
+      {
+        "id": "2",
+        "title": "晨光书店品牌重塑计划",
+        "slug": "morning-light-bookstore-rebrand",
+        "client": "晨光书店",
+        "category": "品牌重塑",
+        "description": "为有着30年历史的本地书店进行品牌更新，保留品牌核心价值的同时赋予其现代活力。",
+        "fullDescription": [
+          "晨光书店是一家拥有30年历史的社区书店，面临数字化冲击和年轻读者流失的挑战。",
+          "品牌重塑的目标是保留书店的历史传承和社区情感连接，同时为其注入现代活力，吸引新一代读者。",
+          "设计过程中，我深入研究了书店的历史、价值观和目标受众，确定了'知识之光，社区之家'的品牌核心理念。",
+          "新的视觉系统采用了温暖的色调和简洁的图形语言，创造出既熟悉又焕然一新的视觉体验。重新设计的空间布局和导视系统提升了顾客体验，增加了书店的社交属性。",
+          "项目成果包括全新的品牌标识、店面设计、宣传材料和社交媒体视觉风格，帮助书店成功吸引了更多年轻读者，同时保持了老顾客的忠诚度。"
+        ],
+        "imageUrl": "/images/project2-main.jpg",
+        "galleryImages": [
+          "/images/project2-1.jpg",
+          "/images/project2-2.jpg",
+          "/images/project2-3.jpg",
+          "/images/project2-4.jpg"
+        ],
+        "tags": ["品牌重塑", "标志设计", "空间设计", "视觉系统"],
+        "date": "2023-08",
+        "featured": true
+      },
+      {
+        "id": "3",
+        "title": "自然之音音乐节视觉设计",
+        "slug": "nature-sound-music-festival",
+        "client": "自然之音音乐节组委会",
+        "category": "活动视觉设计",
+        "description": "为生态主题音乐节设计完整的视觉识别系统和宣传材料，融合音乐与自然元素。",
+        "fullDescription": [
+          "自然之音是一个以环保和可持续发展为主题的年度音乐节，旨在通过音乐传递环保理念。",
+          "设计需要体现音乐节的生态理念，同时具有艺术感和吸引力，能够有效吸引目标观众。",
+          "我创造了一套基于自然元素（水、风、土、火）的视觉语言，通过流动的线条和有机形态表现音乐的律动与自然的和谐。",
+          "色彩选择包括大自然的绿色、蓝色和土黄色，辅以活力的橙色作为点缀，创造出生态又不失活力的视觉效果。",
+          "完整的设计套件包括海报、宣传册、节目单、网站设计、舞台背景、导视系统和周边产品设计，为音乐节提供了一致且具有辨识度的视觉体验。"
+        ],
+        "imageUrl": "/images/project3-main.jpg",
+        "galleryImages": [
+          "/images/project3-1.jpg",
+          "/images/project3-2.jpg",
+          "/images/project3-3.jpg",
+          "/images/project3-4.jpg"
+        ],
+        "tags": ["活动设计", "海报设计", "品牌设计", "环保主题"],
+        "date": "2023-10",
+        "featured": false
+      }
+    ]
+  }
+} 

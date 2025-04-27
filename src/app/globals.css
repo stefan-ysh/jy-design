@@ -1,0 +1,368 @@
+@import "tailwindcss";
+
+/* 预加载样式，防止闪烁 */
+html.js-loading {
+  visibility: hidden;
+}
+
+/* 添加主题切换过渡 */
+html {
+  transition: color-scheme 0.3s ease;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+/* 为部分会发生主题变化的元素添加过渡 */
+body,
+.transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Text colors */
+  --text-primary: #171717;
+  --text-secondary: #404040;
+  
+  /* Neutral colors */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  --neutral-950: #0a0a0a;
+  
+  /* UI Elements */
+  --navbar-bg: rgba(255, 255, 255, 0.9);
+  --hover-bg: #f5f5f5;
+  --menu-bg: #ffffff;
+  --footer-bg: #f5f5f5;
+  --border-color: #e5e5e5;
+  
+  /* Button styles */
+  --btn-default-bg: #2A3D45;
+  --btn-default-text: #ffffff;
+  --btn-default-hover: rgba(42, 61, 69, 0.9);
+  --btn-secondary-bg: #f5f5f5;
+  --btn-secondary-text: #2A3D45;
+  --btn-secondary-hover: rgba(245, 245, 245, 0.8);
+  
+  /* Section & Card Backgrounds */
+  --hero-bg: #f7f9fa;
+  --about-bg: #ffffff;
+  --projects-bg: #f0f4f5;
+  --cta-bg: #2A3D45;
+  --cta-text: #ffffff;
+  --card-bg: #ffffff;
+  --skill-card-bg: #f7f9fa;
+  
+  /* About Page Specific */
+  --profile-card-bg: #ffffff;
+  --timeline-dot-bg: #508991;
+  --timeline-border: #d4d4d4;
+  --skill-bar-bg: #e5e5e5;
+  --skill-bar-fill: #508991;
+  --edu-card-bg: #f7f9fa;
+  --experience-card-bg: #ffffff;
+  --experience-period-bg: #f5f5f5;
+  
+  /* Contact Page Specific */
+  --contact-card-bg: #ffffff;
+  --input-border: #e5e5e5;
+  --success-bg: rgba(80, 137, 145, 0.1);
+  --success-border: rgba(80, 137, 145, 0.2);
+  --success-text: #2A3D45;
+  --icon-color: #508991;
+  
+  /* Decorative Elements */
+  --gradient-1-from: rgba(80, 137, 145, 0.2);
+  --gradient-1-to: rgba(42, 61, 69, 0.3);
+  --gradient-2-from: rgba(172, 189, 168, 0.2);
+  --gradient-2-to: rgba(80, 137, 145, 0.3);
+  
+  /* Animation settings */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-slow: 700ms;
+  --transition-medium: 500ms;
+  --transition-fast: 300ms;
+}
+
+.dark {
+  --background: #0e1516;
+  --foreground: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  
+  /* UI Elements */
+  --navbar-bg: rgba(14, 21, 22, 0.9);
+  --hover-bg: #1e2b2d;
+  --menu-bg: #0e1516;
+  --footer-bg: #172224;
+  --border-color: #263638;
+  
+  /* Button styles */
+  --btn-default-bg: #508991;
+  --btn-default-text: #ffffff;
+  --btn-default-hover: rgba(80, 137, 145, 0.9);
+  --btn-secondary-bg: #1e2b2d;
+  --btn-secondary-text: #ffffff;
+  --btn-secondary-hover: rgba(30, 43, 45, 0.8);
+  
+  /* Section & Card Backgrounds */
+  --hero-bg: #0e1516;
+  --about-bg: #172224;
+  --projects-bg: #0e1516;
+  --cta-bg: #11191a;
+  --cta-text: #ffffff;
+  --card-bg: #172224;
+  --skill-card-bg: #1e2b2d;
+  
+  /* About Page Specific */
+  --profile-card-bg: #172224;
+  --timeline-dot-bg: #508991;
+  --timeline-border: #263638;
+  --skill-bar-bg: #1e2b2d;
+  --skill-bar-fill: #508991;
+  --edu-card-bg: #1e2b2d;
+  --experience-card-bg: #172224;
+  --experience-period-bg: #1e2b2d;
+  
+  /* Contact Page Specific */
+  --contact-card-bg: #172224;
+  --input-border: #263638;
+  --success-bg: rgba(80, 137, 145, 0.05);
+  --success-border: rgba(80, 137, 145, 0.1);
+  --success-text: #ACBD9E;
+  --icon-color: #ACBD9E;
+  
+  /* Decorative Elements */
+  --gradient-1-from: rgba(80, 137, 145, 0.1);
+  --gradient-1-to: rgba(42, 61, 69, 0.1);
+  --gradient-2-from: rgba(172, 189, 168, 0.1);
+  --gradient-2-to: rgba(80, 137, 145, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Base Styles */
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in var(--transition-medium) var(--ease-out-expo) forwards;
+}
+
+.slide-up {
+  animation: slide-up var(--transition-medium) var(--ease-out-expo) forwards;
+}
+
+.scale-in {
+  animation: scale-in var(--transition-medium) var(--ease-out-expo) forwards;
+}
+
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Content container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Text styling classes */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Additional theme classes */
+.bg-theme-hover {
+  background-color: var(--hover-bg);
+}
+
+.bg-theme-navbar {
+  background-color: var(--navbar-bg);
+}
+
+.bg-theme-menu {
+  background-color: var(--menu-bg);
+}
+
+.bg-theme-footer {
+  background-color: var(--footer-bg);
+}
+
+.border-theme {
+  border-color: var(--border-color);
+}
+
+.bg-theme-hero {
+  background-color: var(--hero-bg);
+}
+
+.bg-theme-about {
+  background-color: var(--about-bg);
+}
+
+.bg-theme-projects {
+  background-color: var(--projects-bg);
+}
+
+.bg-theme-cta {
+  background-color: var(--cta-bg);
+}
+
+.text-theme-cta {
+  color: var(--cta-text);
+}
+
+.bg-theme-card {
+  background-color: var(--card-bg);
+}
+
+.bg-theme-skill {
+  background-color: var(--skill-card-bg);
+}
+
+.bg-theme-profile-card {
+  background-color: var(--profile-card-bg);
+}
+
+.bg-theme-timeline-dot {
+  background-color: var(--timeline-dot-bg);
+}
+
+.border-theme-timeline {
+  border-color: var(--timeline-border);
+}
+
+.bg-theme-skill-bar {
+  background-color: var(--skill-bar-bg);
+}
+
+.bg-theme-skill-bar-fill {
+  background-color: var(--skill-bar-fill);
+}
+
+.bg-theme-edu-card {
+  background-color: var(--edu-card-bg);
+}
+
+.bg-theme-experience-card {
+  background-color: var(--experience-card-bg);
+}
+
+.bg-theme-experience-period {
+  background-color: var(--experience-period-bg);
+}
+
+.bg-theme-contact-card {
+  background-color: var(--contact-card-bg);
+}
+
+.border-theme-input {
+  border-color: var(--input-border);
+}
+
+.bg-theme-success {
+  background-color: var(--success-bg);
+}
+
+.border-theme-success {
+  border-color: var(--success-border);
+}
+
+.text-theme-success {
+  color: var(--success-text);
+}
+
+.text-theme-icon {
+  color: var(--icon-color);
+}
